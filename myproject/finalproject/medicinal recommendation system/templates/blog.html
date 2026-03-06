@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background: linear-gradient(135deg, #ffecd2 0%, #679af1 100%);
+        font-family: 'Segoe UI', sans-serif;
+        color: #333;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      h2, h3 {
+        color: #444;
+        font-weight: 600;
+        animation: slideIn 1.2s ease-in-out;
+      }
+
+      p, li {
+        color: #555;
+        animation: fadeUp 1.5s ease-in-out;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+      }
+
+      .icon {
+        font-size: 28px;
+        color: #2575fc;
+        margin-right: 10px;
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      @keyframes slideIn {
+        from {transform: translateX(-40px); opacity: 0;}
+        to {transform: translateX(0); opacity: 1;}
+      }
+
+      @keyframes fadeUp {
+        from {transform: translateY(20px); opacity: 0;}
+        to {transform: translateY(0); opacity: 1;}
+      }
+
+      @keyframes bounce {
+        0%, 100% {transform: translateY(0);}
+        50% {transform: translateY(-8px);}
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+
+      <h2 class="text-center mb-4">🚀 Building a Symptom-Based Disease Diagnosis Web App</h2>
+      <p class="text-center"><em>Developed by Divya & Shruti | FYMCA Students</em></p>
+
+      <div class="card">
+        <h3><i class="fas fa-lightbulb icon"></i> The Inspiration</h3>
+        <p>As FYMCA students passionate about Artificial Intelligence and Machine Learning, we wanted to create something meaningful that connects technology with healthcare. Many people struggle to understand their symptoms, and we envisioned a tool that could provide quick, informative insights for both <strong>patients and doctors</strong>.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fas fa-notes-medical icon"></i> The Problem</h3>
+        <p>People often experience overlapping symptoms, making it difficult to differentiate between diseases. Our challenge was to design a solution that simplifies this process and empowers individuals with accessible health information, while also supporting <strong>doctors in analyzing patient data</strong>.</p>
+      </div>
+
+      <div class="card">
+        <h3><i class="fas fa-cogs icon"></i> The Solution</h3>
+        <p>We developed a web app using <strong>Flask</strong> for the backend and a <strong>Decision Tree Classifier</strong> model for predictions. Here’s how it works:</p>
+        <ol>
+          <li><strong>Symptom Input:</strong> Users enter their symptoms through a simple, user-friendly interface.</li>
+          <li><strong>Machine Learning Model:</strong> Our Decision Tree Classifier, trained on a dataset of symptoms and diseases, predicts possible conditions.</li>
+          <li><strong>Prediction:</strong> The app instantly suggests the most likely disease.</li>
+          <li><strong>Doctor’s Aid:</strong> Doctors can use the app’s predictions and detailed information to support their own analysis and decision-making.</li>
+          <li><strong>Additional Information:</strong> Users also receive details about the disease, precautions, medications, diet, and workout tips.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3><i class="fas fa-star icon"></i> Key Features</h3>
+        <ul>
+          <li><strong>User-Friendly Interface:</strong> Designed for simplicity and ease of use.</li>
+          <li><strong>Accurate Predictions:</strong> Powered by machine learning for reliable results.</li>
+          <li><strong>Doctor-Friendly Insights:</strong> Helps healthcare professionals analyze symptoms and cross-check diagnoses.</li>
+          <li><strong>Comprehensive Information:</strong> Includes disease descriptions, precautions, medications, diet, and fitness tips.</li>
+          <li><strong>Educational Content:</strong> Blog posts and resources to spread health awareness.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><i class="fas fa-check-circle icon"></i> Conclusion</h3>
+        <p>Our Symptom-Based Disease Diagnosis Web App reflects our journey as students exploring AI and healthcare. It’s more than a project—it’s a step toward making healthcare information accessible, personalized, and user-centric. By supporting both <strong>patients and doctors</strong>, we hope this initiative inspires others to combine technology with compassion for a healthier future.</p>
+      </div>
+
+      <footer>
+        Crafted with ❤️ by Divya & Shruti | FYMCA 2025
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

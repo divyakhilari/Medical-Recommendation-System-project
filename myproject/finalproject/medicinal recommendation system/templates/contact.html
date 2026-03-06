@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background: linear-gradient(135deg, #ffecd2 0%, #3f75c7 100%);
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+      }
+      .page-header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      .page-header h2 {
+        font-weight: 700;
+        color: #0f0b0b;
+        letter-spacing: 1px;
+        position: relative;
+        display: inline-block;
+      }
+      .page-header h2::after {
+        content: "";
+        display: block;
+        width: 60%;
+        height: 4px;
+        background: #140b0a;
+        margin: 0.5rem auto 0;
+        border-radius: 2px;
+      }
+      .contact-card {
+        background: linear-gradient(135deg, #ffffff, #f9f9f9);
+        border-radius: 15px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        padding: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+      }
+      .contact-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+      }
+      .contact-card h5 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, #305de3, #ffcc00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .info-label {
+        font-weight: 600;
+        color: #00796b;
+      }
+      a {
+        color: #ff6f61;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      a:hover {
+        color: #ffcc00;
+        text-decoration: underline;
+      }
+      footer {
+        margin-top: 4rem;
+        text-align: center;
+        color: #6c757d;
+        font-size: 0.9rem;
+      }
+      /* Creative colorful border glow */
+      .contact-card::before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        right: -8px;
+        bottom: -8px;
+        border-radius: 20px;
+        background: linear-gradient(45deg, #044cdd, #ffcc00, #4caf50, #2196f3);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+      .contact-card:hover::before {
+        opacity: 0.25;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h2>Contact Us</h2>
+        <p class="text-muted">Have questions or need assistance? We're here to help!</p>
+      </div>
+
+      <!-- Customer Support -->
+      <div class="contact-card mb-4">
+        <h5>Customer Support</h5>
+        <p>Our dedicated customer support team is available to assist you with any inquiries or issues you may have. Whether it's a technical question, feedback, or a general inquiry, we're just a message away.</p>
+      </div>
+
+      <!-- Team Members -->
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="contact-card">
+            <h5>Divya Santosh Khilari</h5>
+            <p><span class="info-label">Email:</span> chhakulikhilari23@gmail.com</p>
+            <p><span class="info-label">Phone:</span> 9325082458</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="contact-card">
+            <h5>Shruti Rahul Bartakke</h5>
+            <p><span class="info-label">Email:</span> bartakke.shrutir@gmail.com</p>
+            <p><span class="info-label">Phone:</span> 9975359751</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stay Connected -->
+      <div class="contact-card my-4">
+        <h5>Stay Connected</h5>
+        <p>Stay up-to-date with the latest news, updates, and health tips by following us on social media. Connect with us on <a href="#">Facebook</a> or <a href="#">Instagram</a> to join our growing community.</p>
+      </div>
+
+      <!-- Location -->
+      <div class="contact-card">
+        <h5>Location</h5>
+        <p>Pimpri, Pune</p>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
